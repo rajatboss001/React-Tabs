@@ -54,14 +54,14 @@ const Homepage = () => {
         </div>
 
         <div className="hero-row mt-16">
-          <div className="flex justify-between gap-5 overflow-x-auto border-b border-gray-200">
+          <div className="flex border-b border-gray-200">
             {TABS.map((tab) => (
               <button
                 key={tab}
                 onClick={() => handleTabChange(tab)}
-                className={`cursor-pointer whitespace-nowrap border-b-2 px-5 py-4 text-2xl capitalize ${
+                className={`cursor-pointer whitespace-nowrap border-b-2 text-center min-w-[256px] py-4 text-2xl capitalize ${
                   activeTab === tab
-                    ? "border-almost-black font-semibold text-almost-black"
+                    ? "border-almost-black text-almost-black"
                     : "border-transparent font-normal text-dark-gray"
                 }`}
               >
