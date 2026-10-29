@@ -182,3 +182,11 @@
     border-right-color: var(--border);
   }
 }
+
+button{
+  background-color: black;
+  min-width: 200px;
+  color: white;
+  border-radius: 20px;
+  
+}

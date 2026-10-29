@@ -48,8 +48,10 @@ const Homepage = () => {
             </p>
 
             <button className="group relative cursor-pointer overflow-hidden rounded-full border border-almost-black px-6 py-3.5 text-lg font-semibold text-almost-black transition-colors duration-300 hover:text-white before:absolute before:inset-0 before:-translate-x-full before:rounded-full before:bg-almost-black before:transition-transform before:duration-500 hover:before:translate-x-0">
-  <span className="relative z-10">View All Projects</span>
-</button>
+              <span className="relative z-10">
+                View All Projects
+              </span>
+            </button>
           </div>
         </div>
 
@@ -59,7 +61,7 @@ const Homepage = () => {
               <button
                 key={tab}
                 onClick={() => handleTabChange(tab)}
-                className={`cursor-pointer whitespace-nowrap border-b-2 text-center min-w-[256px] py-4 text-2xl capitalize ${
+                className={`min-w-[256px] cursor-pointer whitespace-nowrap border-b-2 py-4 text-center text-2xl capitalize ${
                   activeTab === tab
                     ? "border-almost-black text-almost-black"
                     : "border-transparent font-normal text-dark-gray"
@@ -126,13 +128,15 @@ const Homepage = () => {
                 </div>
               </div>
 
+              {/* Before / After Slider */}
               <div className="relative w-full overflow-hidden rounded-xl">
                 <img
                   src={project.beforeImage}
                   alt="Before renovation"
-                  className="block aspect-[4/3] w-full object-cover"
+                  className="block aspect-4/3 w-full object-cover"
                 />
 
+                {/* After Image */}
                 <div
                   className="absolute inset-0 overflow-hidden"
                   style={{
@@ -146,19 +150,27 @@ const Homepage = () => {
                   />
                 </div>
 
-                <span className="absolute left-4 top-4 z-10 rounded-full bg-white px-5 py-2 text-sm font-medium text-black shadow">
-                  Before
-                </span>
+                {/* Before Label: hide near the left edge */}
+                {position > 15 && (
+                  <span className="absolute left-4 top-4 z-10 rounded-full bg-white px-5 py-2 text-sm font-medium text-black shadow">
+                    Before
+                  </span>
+                )}
 
-                <span className="absolute right-4 top-4 z-10 rounded-full bg-white px-5 py-2 text-sm font-medium text-black shadow">
-                  After
-                </span>
+                {/* After Label: hide near the right edge */}
+                {position < 85 && (
+                  <span className="absolute right-4 top-4 z-10 rounded-full bg-white px-5 py-2 text-sm font-medium text-black shadow">
+                    After
+                  </span>
+                )}
 
+                {/* Slider Line */}
                 <div
                   className="pointer-events-none absolute bottom-0 top-0 z-10 w-0.5 bg-white"
                   style={{ left: `${position}%` }}
                 />
 
+                {/* Slider Handle */}
                 <div
                   className="pointer-events-none absolute top-1/2 z-20 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-lg text-black shadow-md"
                   style={{ left: `${position}%` }}
@@ -166,6 +178,7 @@ const Homepage = () => {
                   ‹›
                 </div>
 
+                {/* Range Input */}
                 <input
                   type="range"
                   min="0"
