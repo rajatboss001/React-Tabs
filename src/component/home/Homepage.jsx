@@ -29,7 +29,7 @@ const Homepage = () => {
 
   return (
     <section>
-      <div className="hero-container mx-auto max-w-330 px-5 pt-29.5">
+      <div className="hero-container mx-auto max-w-330 px-5 py-29.5">
         <div className="flex justify-between gap-10 max-lg:flex-col">
           <div className="w-full max-w-162.5">
             <p className="text-sm font-semibold leading-158 text-dark-gray/70">
