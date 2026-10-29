@@ -10,8 +10,8 @@ const afterImage =
 export const BLOG_DATA = [
     {
         category: "bathroom",
-        heading: "Modern Kitchen Transformation",
-        para: "A complete kitchen renovation transforming an unfinished interior into a bright, modern living space with custom cabinetry, integrated appliances, warm oak surfaces, and minimalist detailing.",
+        heading: "Modern bathroom Transformation",
+        para: "A complete bathroom renovation transforming an unfinished interior into a bright, modern living space with custom cabinetry, integrated appliances, warm oak surfaces, and minimalist detailing.",
         time: time_img,
         days: "8 Weeks",
         locationimg: location_img,
@@ -24,7 +24,7 @@ export const BLOG_DATA = [
     {
         category: "kitchen",
         heading: "Modern kitchen Transformation",
-        para: "A beautiful bathroom renovation with modern fittings.",
+        para: "A complete kitchen renovation transforming an unfinished interior into a bright, modern living space with custom cabinetry, integrated appliances, warm oak surfaces, and minimalist detailing.",
         time: time_img,
         days: "8 Weeks",
         locationimg: location_img,
@@ -37,7 +37,7 @@ export const BLOG_DATA = [
     {
         category: "bedroom",
         heading: "Modern bedroom Transformation",
-        para: "A complete kitchen renovation with custom cabinetry.",
+        para: "A complete bedroom renovation transforming an unfinished interior into a bright, modern living space with custom cabinetry, integrated appliances, warm oak surfaces, and minimalist detailing.",
         time: time_img,
         days: "8 Weeks",
         locationimg: location_img,
@@ -50,7 +50,7 @@ export const BLOG_DATA = [
     {
         category: "terrace",
         heading: "Modern terrace Transformation",
-        para: "A complete kitchen renovation with custom cabinetry.",
+        para: "A complete terrace renovation transforming an unfinished interior into a bright, modern living space with custom cabinetry, integrated appliances, warm oak surfaces, and minimalist detailing.",
         time: time_img,
         days: "8 Weeks",
         locationimg: location_img,
@@ -63,7 +63,7 @@ export const BLOG_DATA = [
     {
         category: "living-room",
         heading: "Modern living-room Transformation",
-        para: "A complete kitchen renovation with custom cabinetry.",
+        para: "A complete living-room renovation transforming an unfinished interior into a bright, modern living space with custom cabinetry, integrated appliances, warm oak surfaces, and minimalist detailing.",
         time: time_img,
         days: "8 Weeks",
         locationimg: location_img,

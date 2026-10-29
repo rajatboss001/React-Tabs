@@ -54,7 +54,7 @@ const Homepage = () => {
         </div>
 
         <div className="hero-row mt-16">
-          <div className="flex border-b border-gray-200">
+          <div className="flex flex-wrap border-b border-gray-200">
             {TABS.map((tab) => (
               <button
                 key={tab}
@@ -71,9 +71,8 @@ const Homepage = () => {
           </div>
 
           {project ? (
-            <div className="mt-8 grid grid-cols-2 items-center gap-10 max-lg:grid-cols-1">
-              {/* Left Content */}
-              <div className="w-full max-w-105">
+            <div className="mt-12.5 grid grid-cols-2 gap-10 max-lg:grid-cols-1">
+              <div className="w-full max-w-105 pt-5">
                 <h3 className="text-custom-3xl font-medium text-almost-black">
                   {project.heading}
                 </h3>
@@ -134,7 +133,6 @@ const Homepage = () => {
                   className="block aspect-[4/3] w-full object-cover"
                 />
 
-                {/* After Image */}
                 <div
                   className="absolute inset-0 overflow-hidden"
                   style={{
